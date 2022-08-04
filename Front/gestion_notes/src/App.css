@@ -1,0 +1,164 @@
+.App {
+  text-align: center;
+}
+/*mise en forme du navbar*/
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover:not(.active) {
+  background-color: #111;
+}
+
+nav .active {
+  background-color:#4CAF50;
+}
+/*mise en forme du formulaire*/
+.formulaire{
+  margin-top: 50px;
+}
+form{
+  margin:auto;
+  padding:15px;
+  max-width:400px;
+  align-content:center
+}
+  input[type="text"],
+    input[type="number"],
+    select{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border:1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"]{
+            width: 100%;
+            background-color: #4caF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+    }
+    form a{
+            width: 100%;
+            background-color: #40453e;
+            color: white;
+            padding: 10px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+    }
+    input[type="submit"]:hover{
+        background-color: #45a049;
+    }
+  
+    /*mise en forme duu tableau*/
+    .tableau{
+      margin-top: 50px;
+    }
+    .new{
+      text-align: center;
+      background-color: #40453e;
+      color: white;
+       padding: 14px 20px;
+       border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+        margin-bottom: 50px;
+    }
+   .tableau table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    .tableau th,.tableau td {
+      text-align: left;
+      padding: 8px;
+    }
+    
+    .tableau tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+   .tableau th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #4CAF50;
+      color: white;
+    }
+    .tableau button{
+      background-color: #f44336;
+      border: none;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .tableau a{
+      background-color: #555555;
+      border: none;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+      font-size: 0.9em;
+    }
+    .bulletin{
+      background-color: rgba(46, 78, 255, 0.333);
+      border: none;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+      font-size: 0.7em;
+    }
+    /***********/
+   .recherche input[type=text] {
+      width: 40%;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+     /* background-image: url('searchicon.png');*/
+      background-position: 10px 10px; 
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+      transition: width 0.4s ease-in-out;
+      }
+    
+    .recherche input[type=text]:focus {
+      width: 60%;
+    }
+    

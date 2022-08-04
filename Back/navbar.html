@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+             margin:0;
+             text-decoration: none;
+             list-style: none;
+             box-sizing: border-box;;
+        }
+        nav{
+            width: 100%;
+        }
+ 
+        nav ul{
+            float: right;
+            margin-right: 20px;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 px;
+        }
+        nav ul li a{
+            font-size: 17px;
+            text-transform: uppercase;
+            padding: 7px 13px;
+            border-radius: 3px;
+        }
+        a .active, a:hover{
+            background: rgb(0, 255, 234);
+            transition: -5s;
+        }
+        .checkBtn{
+            font-size: 30px;
+            color: white;
+            float:right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+        @media(max-width: 952px) {
+            label .logo{
+                font-size: 30px;
+                padding-left: 50px;
+            }
+            nav ul li a{
+
+                font-size: 16px;
+            }
+            
+        }
+        @media(max-width: 858px) {
+        .checkBtn{
+            display: block;
+            }
+              ul{
+                  position: fixed;
+                  width: 100%;
+                  height: 100vh;
+                  background: rgb(0, 153, 255);
+                  top: 80px;
+                  left: -100%;
+                  text-align: center;
+                  transition: all .5s;   
+              }            
+              nav ul li{
+                  display: block;
+                  margin: 20px 0;
+                    line-height: 30px;
+              }
+              nav ul li a{
+                  font-size: 20px;
+                }
+                nav ul li a:hover,nav ul li a .active{
+                  background: none;
+                  color:aqua;
+              }
+              #check:checked ~ ul{
+                  left: 0;
+              }
+
+        }
+
+    </style>
+</head>
+<body>
+</td> 
+<!--<Link to={"/Etudiants/Edit/"+{(item.num_inscription)}}>Modifier</Link>
+<Link to={"/Etudiants/Bulletin/"+{(item.num_inscription)}}>Bulletin des notes</Link>-->
+</td>
+    <nav>
+           <input type="checkbox" id="check"> <label for="check" class="checkBtn">=</label>
+        <ul>
+            <li><a href="active" className="">Accueil</a> </li>
+            <li><a href="" className="">Etudiants</a></li>
+            <li><a href="" className="">Matières</a></li>
+            <li><a href="" className="">Notes</a></li>
+        </ul>
+    </nav>
+    <form action="http://localhost:5000/Etudiants/Create" method="POST">
+        <input type="text" name="num">
+        <input type="text" name="nom">
+        <input type="text" name="adressse">
+        <input type="text" name="sexe">
+        <input type="number" name="annee">
+        <select name="niveau">
+            <option value="L1">L1</option>
+            <option value="L2">L2</option>
+        </select>
+        <input type="submit">
+      
+    <p></p>
+<table>
+
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </tbody>
+</table>
+    </form>
+    
+</body>
+</html>
